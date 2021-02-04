@@ -1,0 +1,76 @@
+.form {
+  font: {
+    size: 18px;
+  }
+  display: flex;
+  flex-direction: column;
+
+  &_control {
+    height: 30px;
+    width: 300px;
+    margin: 15px 0;
+    position: relative;
+    border: {
+      width: 0 0 1px 0;
+      style: solid;
+      color: rgba(0, 0, 0, 0.2);
+    }
+    transition: all 0.5s;
+    &-focus {
+      color: #1ed760;
+      border: {
+        color: #1ed760;
+      }
+    }
+  }
+
+  &_submit {
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    color: white;
+    background: linear-gradient(
+      234deg,
+      rgba(239, 42, 255, 0.4990371148459384) 0%,
+      rgba(59, 82, 255, 0.4962359943977591) 100%
+    );
+    font: {
+      weight: 600;
+      size: 20px;
+    }
+    transition: all 0.25s;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &_input {
+    position: relative;
+    width: 260px;
+    transition: all 0.5s;
+    border: none;
+    padding: 0 15px 0 10px;
+    color: black !important;
+    &:focus {
+      outline: none;
+      & ~ .form_control {
+        color: red;
+      }
+    }
+  }
+  &_error {
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    animation: LoginForm_form_error__animation 0.5s ease;
+  }
+}
+
+abbr {
+  cursor: context-menu !important;
+  text-decoration: none !important;
+}

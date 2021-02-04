@@ -1,0 +1,11 @@
+.ChatPage {
+  height: 100vh;
+  &_frame {
+    border: {
+      width: 0 1px 0 0;
+      style: solid;
+      color: #e5e5e5;
+    }
+    height: 100vh;
+  }
+}

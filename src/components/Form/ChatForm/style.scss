@@ -1,0 +1,25 @@
+.ChatForm {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  &_input {
+    border: none;
+    background: #f3f3f5;
+    height: 50px;
+    padding: 5px 20px;
+    border-radius: 20px;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  &_send {
+    position: absolute;
+    font-size: 32px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+}

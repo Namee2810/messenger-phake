@@ -1,0 +1,48 @@
+.LoginForm {
+  animation: LoginForm_animation 0.5s ease;
+
+  &_bubble {
+    position: absolute;
+    border-radius: 50%;
+    &:first-of-type {
+      height: 128px;
+      width: 128px;
+      top: 20px;
+      right: 50px;
+      background: linear-gradient(
+        95deg,
+        rgba(255, 245, 42, 0.4990371148459384) 0%,
+        rgba(83, 255, 59, 0.4962359943977591) 100%
+      );
+    }
+    &:last-of-type {
+      height: 96px;
+      width: 96px;
+      bottom: 15px;
+      left: 20px;
+      background: linear-gradient(234deg, rgba(42, 218, 255, 0.4) 0%, rgba(89, 255, 59, 0.4) 100%);
+    }
+  }
+}
+
+@keyframes LoginForm_form_error__animation {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes LoginForm_animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

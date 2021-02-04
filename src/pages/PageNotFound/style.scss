@@ -1,0 +1,70 @@
+$color: #1ed760;
+.PageNotFound {
+  text-align: center;
+
+  font: {
+    size: 3em;
+  }
+  .button {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color: $color;
+    border: none;
+    transition: all 0.5s;
+    color: white;
+    padding: 15px 45px;
+    font: {
+      size: 20px !important;
+      weight: 500 !important;
+    }
+    &:focus {
+      outline: none;
+    }
+    a {
+      color: white;
+    }
+    &__animation {
+      &:hover {
+        color: white;
+        background-color: $color;
+        &::after {
+          width: calc(100% + 40px);
+          transform: translateX(-20px);
+        }
+        // &::before {
+        //   transform: scaleY(1.5);
+        // }
+      }
+      &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        border: {
+          width: 0 2px;
+          style: solid;
+          color: $color;
+        }
+        position: absolute;
+        top: 0;
+        left: -2px;
+        transition: all 0.5s;
+      }
+      // &::before {
+      //   content: "";
+      //   height: 100%;
+      //   width: 100%;
+      //   border: {
+      //     width: 2px 0;
+      //     style: solid;
+      //     color: #4ee2a3;
+      //   }
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   transition: all 0.5s;
+      // }
+    }
+  }
+}

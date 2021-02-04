@@ -1,0 +1,25 @@
+.LoginPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(33, 243, 163, 1) 0%, rgba(33, 214, 243, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &_header {
+    color: white;
+  }
+  &_main {
+    border-radius: 10px;
+    background: white;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      0 100px 80px rgba(0, 0, 0, 0.07);
+  }
+}
