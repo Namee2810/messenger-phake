@@ -7,6 +7,7 @@ import { Link, useHistory } from "react-router-dom";
 import "./style.scss";
 
 const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/,
+  //eslint-disable-next-line
   regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
   regexFullname = /^[[A-Z]|[a-z]][[A-Z]|[a-z]|\\d|[_]]{7,29}$/;
 
